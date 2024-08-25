@@ -1,6 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #282c34;
+    color: #fff;
+    font-size: 18px;
 }
 
 .fundo {
@@ -12,30 +20,58 @@
     flex-direction: column;
 }
 
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #61dafb;
+}
+
+.calculadora {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
 
 .calculadora button {
-width: 50px;
-height: 50px;
-font-size: 25px;
-cursor: pointer;
-margin: 3px;
-}
-
-.calculadora button:hover{
-    background-color: gray;
-    border: 1px solid gray;
-
-}
-
-.resultado  {
-    width: 210px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
     margin: 5px;
-    background-color: #f0f0f0;
+    border: none;
+    border-radius: 8px;
+    background-color: #444;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.calculadora button:hover {
+    background-color: #61dafb;
+    transform: scale(1.05);
+}
+
+.calculadora button:active {
+    transform: scale(1);
+}
+
+.resultado {
+    width: 260px;
+    height: 50px;
+    margin-bottom: 15px;
+    background-color: #1c1c1c;
     text-align: right;
-    border: 1px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: 10px;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #61dafb;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+table {
+    border-spacing: 0;
+}
+
+td {
+    padding: 0;
 }
